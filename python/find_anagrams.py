@@ -13,7 +13,7 @@ def get_arg():
 def find_anagrams(ip):
 	anagrams = []
 	permute(ip,"", anagrams)
-	return anagrams 
+	return set(anagrams)
 
 def permute(ip, prefix, anagrams):
 	if ip == None or len(ip) == 0:
